@@ -1,5 +1,5 @@
-import logo from './src/medias/logo.PNG';
-import './index.css';
+import logo from '../medias/logo.PNG';
+import '../style/index.css';
 
 function App() {
   return (

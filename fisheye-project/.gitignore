@@ -24,3 +24,5 @@ yarn-error.log*
 
 readme.md
 /.json
+
+.idea
