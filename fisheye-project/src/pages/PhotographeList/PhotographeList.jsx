@@ -1,0 +1,2 @@
+import './photographeList.css'
+
