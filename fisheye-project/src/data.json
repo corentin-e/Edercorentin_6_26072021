@@ -59,6 +59,16 @@
       "tagline": "Toujours à la recherche de LA photo",
       "price": 300,
       "portrait": "MarcelNikolic.jpg"
+    },
+    {
+      "name": "Corentin Eder",
+      "id": 196,
+      "city": "Paris",
+      "country": "France",
+      "tags": ["travel", "architecture"],
+      "tagline": "Toujours plus loin, toujours plus haut !",
+      "price": 300,
+      "portrait": "MarcelNikolic.jpg"
     }
   ],
   "media": [
