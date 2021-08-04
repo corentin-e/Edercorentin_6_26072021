@@ -1,0 +1,36 @@
+{
+    "tags" : [
+        {
+            "name": "Portrait",
+            "id": 10
+        },
+        {
+            "name": "Art",
+            "id": 20
+        },
+        {
+            "name": "Fashion",
+            "id": 30
+        },
+        {
+            "name": "Architecture",
+            "id": 40
+        },
+        {
+            "name": "Travel",
+            "id": 50
+        },
+        {
+            "name": "Sport",
+            "id": 60
+        },
+        {
+            "name": "Animals",
+            "id": 70
+        },
+        {
+            "name": "Events",
+            "id": 80
+        }
+    ]
+}

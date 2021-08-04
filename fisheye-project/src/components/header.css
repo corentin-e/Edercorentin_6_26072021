@@ -1,0 +1,49 @@
+.header__position-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.header__logo-position {
+    flex: 1;
+}
+
+.header__logo-style {
+    width: 260px;
+    height: 80px;
+}
+
+.header__tags-position-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    width: 550px;
+}
+
+.header__tags-style {
+    font-size: 12px;
+    color: brown;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.header__tags-position-items :hover {
+
+    color: white;
+    border: 1px solid lightgray;
+    background-color: brown;
+    
+}
+
+.header__title-page {
+    font-size: 30px;
+    font-weight: 600;
+    color: brown;
+}

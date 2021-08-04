@@ -15,5 +15,6 @@ code {
 .page__position-items {
   display: flex;
   flex-direction: column;
-  background-color: aqua;
+  max-width: 1300px;
+  margin: auto;
 }

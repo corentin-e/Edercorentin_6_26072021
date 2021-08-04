@@ -1,0 +1,18 @@
+.page__position-columns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.page__columns {
+    display: grid;
+    grid: 250px / auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.page__colonums-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
