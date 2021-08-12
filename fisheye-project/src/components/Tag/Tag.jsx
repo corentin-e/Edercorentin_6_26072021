@@ -1,7 +1,7 @@
-import './header.css';
+import './components/header.css';
 import data from './data_tags'
 
-const HeaderTag = () => (
+const Tag = () => (
     <div className="header__tags-position-items">
         {data.tags.map(tag => (
             <div className="header__tags-style">
@@ -11,4 +11,4 @@ const HeaderTag = () => (
         }
     </div>
 )
-export default HeaderTag;
+export default Tag;
