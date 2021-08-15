@@ -30,11 +30,8 @@
     background-color: lightgray;
     color: brown;
     border-radius: 100%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }
 
 .page__name-style {

@@ -18,7 +18,7 @@
       "tags": ["sports", "architecture"],
       "tagline": "Capturer des compositions complexes",
       "price": 250,
-      "portrait": "./medias/photos/Sample Photos/Ellie Rose/sport_water_tunnel.jpg"
+      "portrait": "EllieRoseWilkens.jpg"
     },
     {
       "name": "Tracy Galindo",
@@ -57,16 +57,6 @@
       "country": "Germany",
       "tags": ["travel", "architecture"],
       "tagline": "Toujours à la recherche de LA photo",
-      "price": 300,
-      "portrait": "MarcelNikolic.jpg"
-    },
-    {
-      "name": "Corentin Eder",
-      "id": 196,
-      "city": "Paris",
-      "country": "France",
-      "tags": ["travel", "architecture"],
-      "tagline": "Toujours plus loin, toujours plus haut !",
       "price": 300,
       "portrait": "MarcelNikolic.jpg"
     }

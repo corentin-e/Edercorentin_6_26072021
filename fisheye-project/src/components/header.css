@@ -5,10 +5,6 @@
     margin-top: 10px;
 }
 
-.header__logo-position {
-    flex: 1;
-}
-
 .header__logo-style {
     width: 260px;
     height: 80px;
