@@ -8,6 +8,7 @@
 .header__logo-style {
     width: 260px;
     height: 80px;
+    cursor: pointer;
 }
 
 .header__tags-position-items {
