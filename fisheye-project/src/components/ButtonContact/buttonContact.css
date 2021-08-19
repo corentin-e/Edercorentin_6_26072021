@@ -1,0 +1,8 @@
+.page__button-contact-style {
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
