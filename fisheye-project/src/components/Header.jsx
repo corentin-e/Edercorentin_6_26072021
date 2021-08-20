@@ -2,7 +2,7 @@ import logo from './logo.PNG';
 import './header.css';
 import Tag from "./Tag/Tag"
 import data from './Tag/data_tags'
-import { BrowserRouter as  Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import React from "react";
 
 const Header = () => (

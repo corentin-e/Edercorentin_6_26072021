@@ -1,31 +1,27 @@
 import './index.css';
 import { Header } from "./components";
 import { PhotographeList } from "./pages/PhotographeList";
-import { PhotographerPage } from "./pages/PhotographerPage";
+import PhotographePage from "./pages/PhotographePage";
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
 
 function App() {
-  return (
-    <div className="page__position-items">
-      <Header />
-      <PhotographeList />
-      <PhotographerPage />
-     {/*  <Router>
-        <div>
-          <Switch>
-            <Route path="/">
-              <PhotographeList />
-            </Route>
-            <Route path="/photographePage">
-              <PhotographePage />
-            </Route>
-          </Switch>
+    return (
+        <div className="page__position-items">
+            <Router>
+                <Header />
+
+                <Switch>
+                    <Route path="/photographer/:id">
+                        <PhotographePage />
+                    </Route>
+                    <Route path="/">
+                        <PhotographeList />
+                    </Route>
+                </Switch>
+            </Router>
         </div>
-      </Router> */}
-    </div>
-    
-  );
+    );
 }
 export default App;

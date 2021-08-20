@@ -1,5 +1,5 @@
 import "./detailsBand.css"
-import data from './data'
+import data from '../../data'
 import { ButtonContact } from "../ButtonContact"
 
 
