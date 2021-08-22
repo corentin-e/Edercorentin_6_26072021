@@ -1,6 +1,7 @@
 .header__position-items {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     margin-top: 10px;
 }
@@ -17,18 +18,14 @@
     justify-content: space-around;
     margin: auto;
     width: 550px;
+    order: 2;
 }
 
-.header__tags-style {
-    font-size: 12px;
-    color: brown;
-    border: 1px solid lightgray;
-    border-radius: 10px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 5px;
-    padding-right: 5px;
-    cursor: pointer;
+.header__home-position-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .header__tags-position-items :hover {
@@ -43,4 +40,5 @@
     font-size: 30px;
     font-weight: 600;
     color: brown;
+    order: 2;
 }

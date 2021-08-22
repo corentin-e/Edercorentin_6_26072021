@@ -1,8 +1,15 @@
 .page__button-contact-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: brown;
     color: white;
     border-radius: 5px;
-    padding: 20px;
-    font-size: 20px;
+    padding: 15px;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 28px;
+    margin-left: 15px;
+    height: 20px;
+    cursor: pointer;
 }

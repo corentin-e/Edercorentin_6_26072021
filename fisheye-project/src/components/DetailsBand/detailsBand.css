@@ -27,11 +27,11 @@
 .page__details-block-position {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 .page__details-block-style {
-    line-height: 45px;
+    display: flex;
+    flex-direction: column;
 }
 
 .page__details-name-style {
@@ -46,12 +46,7 @@
     font-size: 20px;
     color: #cc3300;
     margin-top: 5px;
-}
-
-.page__details-price-style {
-    font-size: 15px;
-    color: gray;
-    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .page__details-portrait-style {
@@ -67,4 +62,13 @@
 
 .page__details-portrait-dimensions {
     width: 152%;
+}
+
+.page__details-tags-style {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px
 }

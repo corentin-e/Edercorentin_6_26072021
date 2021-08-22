@@ -1,4 +1,5 @@
 import "./index.js"
+import "./buttonContact.css"
 
 const ButtonContact = () => (
     <div className="page__button-contact-style" onclick="ContactModal">

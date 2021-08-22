@@ -1,0 +1,13 @@
+.header-photographe__position-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.header-photographe__logo-style {
+    width: 260px;
+    height: 80px;
+    cursor: pointer;
+}

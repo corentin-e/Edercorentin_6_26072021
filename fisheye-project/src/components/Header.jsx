@@ -8,7 +8,6 @@ import React from "react";
 const Header = () => (
     <div className="header__position-items">
         <Link to="/"><img className="header__logo-style" src={logo} alt="logo"/></Link>
-
         <div className="header__tags-position-items">
             {data.tags.map(tag => (
                 <Tag key={tag.id} content={tag.name}/>
