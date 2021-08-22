@@ -1,28 +1,11 @@
-.page__album-grid-style {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-auto-rows: 600px;
-    margin-top: 50px;
-}
-
-.page__album-grid-position {
+.page__album-position {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+
 }
 
-.page__album-columns {
-    display: grid;
-    grid-gap: 10px;
-    margin-bottom: 20px;
-}
-
-.page__album-columns-style {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.page__photo-album-style {
-    
+.page__image-album-style {
+    margin-top: 50px;
+    width: 350px;
 }

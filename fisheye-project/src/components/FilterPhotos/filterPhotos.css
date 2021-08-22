@@ -1,0 +1,18 @@
+.page__items-filter-position {
+    display: flex;
+    flex-direction: row;
+}
+
+.page__filter-text {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 20px;
+}
+
+.page__filter-style {
+    padding:10px;
+    border-radius: 5px;
+    background-color: brown;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
