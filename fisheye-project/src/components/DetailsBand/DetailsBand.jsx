@@ -8,21 +8,6 @@ import Tag from "../../components/Tag"
 const DetailsBand = () => {
     let { id } = useParams();
     return (
-       /*  <div className="page__background">
-            <div className="page__items-position">
-                <div className="page__details-block-position">
-                    <div className="page__details-block-style">
-                        <div className="page__details-name-style">{namePhotographer}</div>
-                        <div className="page__details-location-style"></div>
-                        <div className="page__details-citation-style"></div>
-                        <div className="page__details-tags-style"></div>
-                    </div>
-                    <ButtonContact/>
-                </div>
-                <div className="page__details-portrait-style"><img className="page__portrait-dimensions" alt="portrait-photographe" /></div>
-            </div>
-        </div> */
-
         <div> 
             {data.photographers.filter(user => user.id == id).map(photographer => (
                 <div className="page__background">

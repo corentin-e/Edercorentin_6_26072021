@@ -1,8 +1,9 @@
 import React from "react";
 import './photographePage.css'
 import { DetailsBand } from "../../components/DetailsBand";
-import {FilterPhotos} from "../../components/FilterPhotos";
-import {PhotosAlbum} from "../../components/PhotosAlbum";
+import { FilterPhotos } from "../../components/FilterPhotos";
+import { PhotosAlbum } from "../../components/PhotosAlbum";
+
 
 /* import { BrowserRouter as  Link } from 'react-router-dom'; */
 /* import React from "react"; */

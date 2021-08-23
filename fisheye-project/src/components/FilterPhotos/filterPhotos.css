@@ -1,6 +1,7 @@
 .page__items-filter-position {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .page__filter-text {
@@ -9,10 +10,21 @@
     padding-right: 20px;
 }
 
-.page__filter-style {
+.page__filter-dropdown-style {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
     padding:10px;
     border-radius: 5px;
+    border: none;
     background-color: brown;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.page__icon-position {
+    
+    margin-left: 10px;
 }
