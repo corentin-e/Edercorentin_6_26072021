@@ -1,0 +1,27 @@
+.page__infos-band-items-position {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:salmon;
+    width:300px;
+    justify-content: space-around;
+    padding: 14px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-left: 600px;
+    z-index: 1;
+}
+
+.page__infos-band-like-style {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.page__info-band-icon-style {
+    margin-left: 5px;
+}
+
+.page__infos-band-price-style {
+    font-size: 20px;
+}
