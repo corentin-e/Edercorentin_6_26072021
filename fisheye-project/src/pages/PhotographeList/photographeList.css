@@ -1,13 +1,13 @@
-.page__grid-position {
-    display: flex;
-    justify-content: space-around;
-}
-
 .page__grid-style {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-auto-rows: 600px;
     margin-top: 50px;
+}
+
+.page__grid-position {
+    display: flex;
+    justify-content: space-around;
 }
 
 .page__columns {
