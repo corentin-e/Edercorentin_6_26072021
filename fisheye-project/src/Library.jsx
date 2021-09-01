@@ -26,4 +26,6 @@
                 <span>{photo.likes}</span>
                 ))
             } 
-    ) */
+    ) 
+    
+    {data.photographers.filter(user => user.id == id).map(photographer => (*/

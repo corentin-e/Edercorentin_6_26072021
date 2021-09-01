@@ -2,35 +2,43 @@
     "tags" : [
         {
             "name": "Portrait",
-            "id": 10
+            "value": "portrait",
+            "id": 10534564651235
         },
         {
             "name": "Art",
+            "value": "art",
             "id": 20
         },
         {
             "name": "Fashion",
+            "value": "fashion",
             "id": 30
         },
         {
             "name": "Architecture",
+            "value": "architecture",
             "id": 40
         },
         {
             "name": "Travel",
+            "value": "travel",
             "id": 50
         },
         {
             "name": "Sport",
+            "value": "sport",
             "id": 60
         },
         {
             "name": "Animals",
+            "value": "animals",
             "id": 70
         },
         {
             "name": "Events",
+            "value": "events",
             "id": 80
-        }
+        } 
     ]
 }

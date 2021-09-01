@@ -4,6 +4,9 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
 }
 
 .header__logo-style {
@@ -21,6 +24,10 @@
     order: 2;
 }
 
+.header__tags-display {
+    display: hiden;
+}
+
 .header__home-position-items {
     display: flex;
     flex-direction: row;
@@ -29,11 +36,9 @@
 }
 
 .header__tags-position-items :hover {
-
     color: white;
     border: 1px solid lightgray;
     background-color: brown;
-    
 }
 
 .header__title-page {
@@ -41,4 +46,27 @@
     font-weight: 600;
     color: brown;
     order: 2;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .header__tags-display {
+        display: none;
+    }
+    .header__position-items {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header__logo-style {
+        width: 190px;
+        height: 60px;
+        cursor: pointer;
+        padding: 10px;
+    }
+    
+    .header__title-page {
+        font-size: 15px;
+    }
 }

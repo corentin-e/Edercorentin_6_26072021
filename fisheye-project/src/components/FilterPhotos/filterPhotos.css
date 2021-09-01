@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 30px;
 }
 
 .page__filter-text {
@@ -10,21 +11,25 @@
     padding-right: 20px;
 }
 
-.page__filter-dropdown-style {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    padding:10px;
-    border-radius: 5px;
-    border: none;
+.myControlClassName {
     background-color: brown;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    width: 150px;
+    border-radius: 5px;
 }
 
-.page__icon-position {
-    
-    margin-left: 10px;
+.myArrowClassName {
+    border-color: white transparent transparent;
+}
+
+.myMenuClassName {
+    background-color: brown;
+    width: 150px;
+    color: white;
+}
+
+.options__style {
+    color: white;
 }

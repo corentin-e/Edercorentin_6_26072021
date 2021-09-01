@@ -1,24 +1,27 @@
 import React from "react";
 import './photographePage.css'
-import { DetailsBand } from "../../components/DetailsBand";
+import { ProfilPhotographerBand } from "../../components/ProfilPhotographerBand";
 import { FilterPhotos } from "../../components/FilterPhotos";
 import {PhotosAlbum} from "../../components/PhotosAlbum";
-import { InfosBand } from "../../components/InfosBand";
+import { LikesPricesBand } from "../../components/LikesPricesBand";
+import {useParams} from "react-router-dom";
+import data from '../../data'
 
 
 /* import { BrowserRouter as  Link } from 'react-router-dom'; */
 /* import React from "react"; */
 
 const PhotographePage = () => {
+    let { id } = useParams();
+    const photographer = data.photographers.find(user => user.id == id)
+    const photos = data.media.filter(photo => photo.photographerId == id)
    
     return (
         <div className ="page__content-position">
-            <DetailsBand/>
+            <ProfilPhotographerBand photographer={photographer}/>
             <FilterPhotos/>
-            <PhotosAlbum/>
-            <div className ="page__info-band-position">
-                <InfosBand/>
-            </div>
+            <PhotosAlbum photos={photos}/>
+            <LikesPricesBand price={photographer.price} likes={photographer.likes}/>
         </div>
         
     )

@@ -10,6 +10,9 @@ import { HeaderPhotographe } from './components/HeaderPhotographe';
 function App() {
     const [tagFilter, setTagFilter] = useState([]);
     const toggleFilter = filter => {
+
+        console.log("value", filter)
+
         const isActive = tagFilter.find(value => value === filter)
 
         if (isActive) {

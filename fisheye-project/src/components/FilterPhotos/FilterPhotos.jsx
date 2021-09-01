@@ -1,9 +1,13 @@
+import 'react-dropdown/style.css';
 import "./filterPhotos.css"
-import Dropdown from 'react-dropdown';
+import React from 'react';
+import Dropdown from "react-dropdown";
 
 const FilterPhotos = () => {
     const options = [
-        'Popularité', 'Date', 'Titre'
+        {value:'popularité', label:'Popularité', className:"options__style"},
+        {value:'date', label:'Date', className:"options__style"},
+        {value:'titre', label:'Titre', className:"options__style"}
     ];
     const defaultOption = options[0];
 
@@ -11,8 +15,13 @@ const FilterPhotos = () => {
         <div className="page__items-filter-position">
             <p className="page__filter-text">Trier par</p>
             <div className="page__filter-dropdown-style">
-                <Dropdown options={options} value={defaultOption}/>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down page__icon-position"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                <Dropdown
+                    options={options}
+                    value={defaultOption}
+                    controlClassName='myControlClassName'
+                    arrowClassName='myArrowClassName'
+                    menuClassName='myMenuClassName'
+                />
             </div>
         </div>
     )
