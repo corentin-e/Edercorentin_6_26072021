@@ -4,8 +4,6 @@ import FormContact from "../FormPhotographerContact/FormContact.jsx"
 import Modal from 'react-modal';
 import React from 'react';
 
-Modal.setAppElement('#yourAppElement');
-
 const ButtonContact = () => {
     const [modalIsOpen, setIsOpen] = React.useState(false);
   
