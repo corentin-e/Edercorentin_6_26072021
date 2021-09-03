@@ -4,8 +4,20 @@ import FormContact from "../FormPhotographerContact/FormContact.jsx"
 import Modal from 'react-modal';
 import React from 'react';
 
-const ButtonContact = () => {
+const ButtonContact = ({photographer}) => {
     const [modalIsOpen, setIsOpen] = React.useState(false);
+    const customStyles = {
+      content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        width: '380px',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
+        padding: 0,
+      },
+    };
   
     function openModal() {
       setIsOpen(true);
@@ -21,9 +33,10 @@ const ButtonContact = () => {
             <Modal
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
-            contentLabel="Example Modal"
+            contentLabel="Contact me"
+            style={customStyles}
             >
-                <FormContact/>
+              <FormContact photographer={photographer} closeModal={closeModal}/>
             </Modal>
         </div>
     )

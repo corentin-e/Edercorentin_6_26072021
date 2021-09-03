@@ -1,15 +1,14 @@
 /* import { Router, Link, Route } from "react-router-dom"; */
 import "./photosAlbum.css"
-import data from '../../data'
 import {useParams} from "react-router-dom";
 import FeatherIcon from 'feather-icons-react';
 
 
-const PhotosAlbum = () => {
+const PhotosAlbum = ({photos}) => {
     let { id } = useParams();
     return (
         <div className="page__album-grid-style">
-            {data.media.filter(photo => photo.photographerId == id).map(media => (
+            {photos.map(media => (
                     <div className="page__album-grid-position" >
                         <div className="page__album-grid">
                             <div className="page__album-block-image-items-position">
