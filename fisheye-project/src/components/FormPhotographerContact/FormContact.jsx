@@ -32,7 +32,7 @@ const FormContact = ({photographer, closeModal}) => {
                             type="email"
                         />
                         <p className="form__content-text-style">Votre message</p>
-                        <input 
+                        <textarea
                             className="form__content-input-message-style" 
                             type="textarea"
                         />

@@ -26,3 +26,10 @@
 .page__infos-band-price-style {
     font-size: 20px;
 }
+
+@media screen and (max-width: 700px) {
+    .page__infos-band-items-position {
+        display: none;
+    }
+    
+}

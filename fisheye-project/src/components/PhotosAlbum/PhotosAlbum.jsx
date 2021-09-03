@@ -6,6 +6,7 @@ import FeatherIcon from 'feather-icons-react';
 
 const PhotosAlbum = ({photos}) => {
     let { id } = useParams();
+
     return (
         <div className="page__album-grid-style">
             {photos.map(media => (
@@ -13,7 +14,7 @@ const PhotosAlbum = ({photos}) => {
                         <div className="page__album-grid">
                             <div className="page__album-block-image-items-position">
                                 <div className="page__image-cadre-album-style">
-                                    <img className="page__image-album-style" type="jpg" src={`${process.env.PUBLIC_URL}/asset/photos/Album/${media.image}`} />
+                                    <img className="page__image-album-style" type="jpg" src={`${process.env.PUBLIC_URL}/asset/photos/Album/${media.image}`}></img>
                                 </div>
                                 <div className="page__image-details-album-position">
                                     <div className="page__image-details-title-style">{media.title}</div>

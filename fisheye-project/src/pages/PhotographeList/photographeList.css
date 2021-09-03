@@ -35,7 +35,9 @@
 }
 
 .page__portrait-dimensions {
-    width: 152%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .page__name-style {
