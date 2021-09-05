@@ -2,8 +2,6 @@ import "./formContact.css"
 import React from "react";
 
 const FormContact = ({photographer, closeModal}) => {
-    const [modalIsOpen, setIsOpen] = React.useState(false);
-
     return (
         <div className="form__content-style">
             <div className="form__header-position-items">

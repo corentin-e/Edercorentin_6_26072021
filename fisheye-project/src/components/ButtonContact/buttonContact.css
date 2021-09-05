@@ -18,3 +18,40 @@
 .form__display {
     display: none;
 }
+
+.modal_responsive {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    width: 35%;
+}
+
+@media screen and (max-width: 1200px) {
+    .modal_responsive {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .page__button-contact-style {
+        margin-left: 0px;
+
+    }
+
+    .page__button-responsive {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 10px;
+        width: 100%;
+        
+    }
+
+    .modal_responsive {
+        width: 100%;
+    }
+}

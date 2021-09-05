@@ -73,4 +73,11 @@
     .page__album-grid-style {
         grid-template-columns: auto;
     }
+
+    .page__image-cadre-album-style {
+        width: 100%;
+        height: 355px;
+    }
 }
+
+    

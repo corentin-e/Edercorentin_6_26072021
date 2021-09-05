@@ -4,17 +4,18 @@ import {useParams} from "react-router-dom";
 import FeatherIcon from 'feather-icons-react';
 
 
-const PhotosAlbum = ({photos}) => {
-    let { id } = useParams();
-
+const PhotosAlbum = ({photosSorted}) => {
     return (
         <div className="page__album-grid-style">
-            {photos.map(media => (
+            {photosSorted.map(media => (
                     <div className="page__album-grid-position" >
                         <div className="page__album-grid">
                             <div className="page__album-block-image-items-position">
                                 <div className="page__image-cadre-album-style">
-                                    <img className="page__image-album-style" type="jpg" src={`${process.env.PUBLIC_URL}/asset/photos/Album/${media.image}`}></img>
+                                    {("video" in media)
+                                        ? <video autoplay controls className="page__image-album-style" type="jpg" src={`${process.env.PUBLIC_URL}/asset/photos/Album/${media.video}`} />
+                                        : <img className="page__image-album-style" type="jpg" src={`${process.env.PUBLIC_URL}/asset/photos/Album/${media.image}`} />
+                                    }
                                 </div>
                                 <div className="page__image-details-album-position">
                                     <div className="page__image-details-title-style">{media.title}</div>
