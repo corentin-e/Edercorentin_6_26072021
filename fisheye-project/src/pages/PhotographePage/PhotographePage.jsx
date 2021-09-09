@@ -1,4 +1,4 @@
-import React, {useState, options} from "react";
+import React, {useState, text} from "react";
 import './photographePage.css'
 import { ProfilPhotographerBand } from "../../components/ProfilPhotographerBand";
 import { FilterPhotos } from "../../components/FilterPhotos";
@@ -22,20 +22,25 @@ const PhotographePage = () => {
         if(activeFilter === 'Popularité') {
             return b.likes - a.likes
         }
-        /* if(activeFilter === options[1]) {
+        else if(activeFilter === 'Date') {
             return b.date - a.date
         }
-        if(activeFilter === options[2]) {
+        else if(activeFilter === 'Titre') {
             return b.title - a.title
-        } */
+        }
     })
 
     console.log(activeFilter)
-   
+
+   /*  const changeActiver = (label) => {
+        setActiveFilter (label)
+    } */
+
     return (
         <div className ="page__content-position">
             <ProfilPhotographerBand photographer={photographer}/>
-            <FilterPhotos activeFilter={activeFilter} setActiveFilter={setActiveFilter}/>
+            <FilterPhotos /* changeActiver={changeActiver} *//>
+            {activeFilter}
             <PhotosAlbum photosSorted={photosSorted}/>
             <LikesPricesBand price={photographer.price} likes={photographer.likes}/>
         </div>

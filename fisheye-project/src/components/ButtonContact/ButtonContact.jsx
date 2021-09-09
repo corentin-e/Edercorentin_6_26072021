@@ -5,7 +5,7 @@ import Modal from 'react-modal';
 import React from 'react';
 import { useMediaQuery } from 'react-responsive'
 
-const ButtonContact = ({photographer}) => {
+const ButtonContact = ({photographer, photosSorted}) => {
     /* const isMobilScreen = useMediaQuery ({query: '(max-width: 700px)'})
     const isTabletScreen = useMediaQuery ({query: '(max-width: 1200px)'}) */
     const [modalIsOpen, setIsOpen] = React.useState(false);
