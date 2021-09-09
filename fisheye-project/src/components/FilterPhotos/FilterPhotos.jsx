@@ -9,10 +9,10 @@ const FilterPhotos = ({changeActiver}) => {
         {value:'date', label:'Date', className:"options__style",},
         {value:'titre', label:'Titre', className:"options__style",}
     ];
-    const defaultOption = options.value;
+    const defaultOption = options.label;
     console.log(defaultOption)
 
-    /* const activerFilter = (label) => {
+    /* const activerFilter = (event) => {
         changeActiver(options.label);
     }; */
 
@@ -21,7 +21,7 @@ const FilterPhotos = ({changeActiver}) => {
             <p className="page__filter-text">Trier par</p>
             <div className="page__filter-dropdown-style">
                 <Dropdown
-                    /* onclick = {() => activerFilter} */
+                    /* onChange = {() => activerFilter} */
                     options={options}
                     value={defaultOption}
                     controlClassName='myControlClassName'

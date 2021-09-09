@@ -21,19 +21,17 @@ const PhotographePage = () => {
     const photosSorted = photos.sort((a, b) => {
         if(activeFilter === 'Popularité') {
             return b.likes - a.likes
-        }
-        else if(activeFilter === 'Date') {
+        } else if(activeFilter === 'Date') {
             return b.date - a.date
-        }
-        else if(activeFilter === 'Titre') {
+        } else if(activeFilter === 'Titre') {
             return b.title - a.title
         }
     })
 
     console.log(activeFilter)
 
-   /*  const changeActiver = (label) => {
-        setActiveFilter (label)
+   /*  const changeActiver = (event) => {
+        setActiveFilter (options.label)
     } */
 
     return (

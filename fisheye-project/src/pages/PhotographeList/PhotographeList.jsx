@@ -5,7 +5,7 @@ import React from "react";
 import Tag from "../../components/Tag"
 
 
-const PhotographeList = () => (
+const PhotographeList = (tagFilter, setTagFilter ) => (
     <div className="page__grid-style">
         {data.photographers.map(photographer => (
                 <div className="page__grid-position">
@@ -19,7 +19,7 @@ const PhotographeList = () => (
                             <div className="page__price-style">{photographer.price}€/jour</div>
                             <div className="page__tags-style">
                                 {photographer.tags.map(tag => (
-                                    <Tag key={tag} content={tag} />
+                                    <Tag key={tag} content={tag} setTagFilter={setTagFilter} />
                                 ))
                                 }
                             </div>
