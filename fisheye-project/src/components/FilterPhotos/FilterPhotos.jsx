@@ -3,7 +3,7 @@ import "./filterPhotos.css"
 import React from 'react';
 import Dropdown from "react-dropdown";
 
-const FilterPhotos = ({changeActiver}) => {
+const FilterPhotos = ({activeFilter, setActiveFilter}) => {
     const options = [
         {value:'popularité', label:'Popularité', className:"options__style",},
         {value:'date', label:'Date', className:"options__style",},
@@ -12,16 +12,17 @@ const FilterPhotos = ({changeActiver}) => {
     const defaultOption = options.label;
     console.log(defaultOption)
 
-    /* const activerFilter = (event) => {
-        changeActiver(options.label);
-    }; */
+    const changeFilter = (options) => {
+        setActiveFilter(options.label);
+    };
+    
 
     return (
         <div className="page__items-filter-position">
             <p className="page__filter-text">Trier par</p>
             <div className="page__filter-dropdown-style">
                 <Dropdown
-                    /* onChange = {() => activerFilter} */
+                    onChange = {changeFilter}
                     options={options}
                     value={defaultOption}
                     controlClassName='myControlClassName'

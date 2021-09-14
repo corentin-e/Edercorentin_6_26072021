@@ -32,14 +32,17 @@
     flex-direction: column;
 }
 
-.page__details-name-style {
+.page__photographer-block {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.page__details-name-style {
     font-size: 50px;
     color: #cc3300;
-    margin-top: 15px;
     cursor: pointer;
-
 }
 
 .page__details-location-style {

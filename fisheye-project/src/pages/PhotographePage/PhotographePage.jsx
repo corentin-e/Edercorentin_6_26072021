@@ -12,11 +12,10 @@ import data from '../../data'
 /* import React from "react"; */
 
 const PhotographePage = () => {
+    const [activeFilter, setActiveFilter] = useState('Popularité')
     let { id } = useParams();
     const photographer = data.photographers.find(user => user.id == id)
     const photos = data.media.filter(photo => photo.photographerId == id)
-
-    const [activeFilter, setActiveFilter] = useState('Popularité')
 
     const photosSorted = photos.sort((a, b) => {
         if(activeFilter === 'Popularité') {
@@ -24,21 +23,16 @@ const PhotographePage = () => {
         } else if(activeFilter === 'Date') {
             return b.date - a.date
         } else if(activeFilter === 'Titre') {
-            return b.title - a.title
+            return a.title.localeCompare(b.title)
         }
     })
 
     console.log(activeFilter)
 
-   /*  const changeActiver = (event) => {
-        setActiveFilter (options.label)
-    } */
-
     return (
         <div className ="page__content-position">
             <ProfilPhotographerBand photographer={photographer}/>
-            <FilterPhotos /* changeActiver={changeActiver} *//>
-            {activeFilter}
+            <FilterPhotos activeFilter={activeFilter} setActiveFilter={setActiveFilter}/>
             <PhotosAlbum photosSorted={photosSorted}/>
             <LikesPricesBand price={photographer.price} likes={photographer.likes}/>
         </div>

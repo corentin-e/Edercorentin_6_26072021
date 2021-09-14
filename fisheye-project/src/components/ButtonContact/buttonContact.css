@@ -8,8 +8,7 @@
     padding: 20px;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 15px;
-    margin-left: 20px;
+    margin-left: 10px;
     height: 20px;
     cursor: pointer;
     border: none;
@@ -33,6 +32,16 @@
 @media screen and (max-width: 1200px) {
     .modal_responsive {
         width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .modal_responsive {
+        width: 50%;
+    }
+    .page__button-contact-style {
+        margin-left: 0px;
     }
 }
 
