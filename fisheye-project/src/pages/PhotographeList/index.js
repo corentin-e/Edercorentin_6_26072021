@@ -1,1 +1,0 @@
-export { default as PhotographeList } from './PhotographeList'

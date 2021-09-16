@@ -64,6 +64,12 @@
     margin-left: 5px;
 }
 
+.test {
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+}
+
 @media screen and (max-width: 1200px) {
     .page__album-grid-style {
         grid-template-columns: auto auto;

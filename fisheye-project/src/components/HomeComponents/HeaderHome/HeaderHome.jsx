@@ -1,11 +1,11 @@
 import logo from './logo.PNG';
-import './header.css';
-import Tag from "./Tag/Tag"
-import data from './Tag/data_tags'
+import './headerHome.css';
+import Tag from "../Tag/Tag"
+import data from '../../HomeComponents/Tag/data_tags'
 import { Link } from 'react-router-dom';
 import React from "react";
 
-const Header = (tagFilter, toggleFilter) => (
+const HeaderHome = (tagFilter, toggleFilter) => (
     <div className="header__position-items">
         <Link to="/"><img className="header__logo-style" src={logo} alt="logo"/></Link>
         <div className="header__tags-display">
@@ -19,4 +19,4 @@ const Header = (tagFilter, toggleFilter) => (
         <div className="header__title-page">Nos Photographes</div>
     </div>
 )
-export default Header;
+export default HeaderHome;

@@ -1,9 +1,10 @@
-import "./profilPhotographerBand.css"
-import { ButtonContact } from "../ButtonContact"
-import Tag from "../Tag"
+import "./bandCard.css"
+import { ButtonContact } from "../../ContactTools/ButtonContact";
+import Tag from "../../../HomeComponents/Tag"
 
 
-const ProfilPhotographerBand = ({photographer}) => (
+
+const BandCard = ({photographer}) => (
     <div> 
         <div className="page__background">
             <div className="page__items-position">
@@ -29,4 +30,4 @@ const ProfilPhotographerBand = ({photographer}) => (
         </div>
     </div>
 )
-export default ProfilPhotographerBand;
+export default BandCard;

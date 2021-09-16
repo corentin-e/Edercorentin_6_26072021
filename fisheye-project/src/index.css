@@ -17,3 +17,23 @@ code {
   flex-direction: column;
   margin: 10px;
 }
+
+.button-return-top-page__style {
+  position: fixed;
+  font-family:'Helvetica',
+    sans-serif;
+  left: 45%;
+  background-color:salmon;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 150px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button-return-top-page__style:hover {
+  background-color: brown;
+  color: white;
+}

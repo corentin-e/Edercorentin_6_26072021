@@ -1,9 +1,9 @@
 import React, {useState, text} from "react";
 import './photographePage.css'
-import { ProfilPhotographerBand } from "../../components/ProfilPhotographerBand";
-import { FilterPhotos } from "../../components/FilterPhotos";
-import {PhotosAlbum} from "../../components/PhotosAlbum";
-import { LikesPricesBand } from "../../components/LikesPricesBand";
+import { BandCard } from "../../components/PhotographeComponents/ProfilPhotographer/BandCard";
+import { FilterAlbum } from "../../components/PhotographeComponents/Album/FilterAlbum";
+import { PhotosAlbum } from "../../components/PhotographeComponents/Album/PhotosAlbum";
+import { CotationBand } from "../../components/PhotographeComponents/ProfilPhotographer/CotationBand";
 import {useParams} from "react-router-dom";
 import data from '../../data'
 
@@ -31,10 +31,10 @@ const PhotographePage = () => {
 
     return (
         <div className ="page__content-position">
-            <ProfilPhotographerBand photographer={photographer}/>
-            <FilterPhotos activeFilter={activeFilter} setActiveFilter={setActiveFilter}/>
+            <BandCard photographer={photographer}/>
+            <FilterAlbum activeFilter={activeFilter} setActiveFilter={setActiveFilter}/>
             <PhotosAlbum photosSorted={photosSorted}/>
-            <LikesPricesBand price={photographer.price} likes={photographer.likes}/>
+            <CotationBand price={photographer.price} likes={photographer.likes}/>
         </div>
         
     )

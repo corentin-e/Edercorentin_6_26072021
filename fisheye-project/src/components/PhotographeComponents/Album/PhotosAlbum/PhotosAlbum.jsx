@@ -4,7 +4,8 @@ import {useParams} from "react-router-dom";
 import FeatherIcon from 'feather-icons-react';
 import Modal from 'react-modal';
 import React from 'react';
-import { CarouselAlbum } from "../CarouselAlbum";
+import { CarouselAlbum } from "../../Album/CarouselAlbum";
+
 
 
 const PhotosAlbum = ({photosSorted}) => {

@@ -1,11 +1,11 @@
 import data from '../../data'
-import './photographeList.css'
+import './homePage.css'
 import { Link } from 'react-router-dom';
 import React from "react";
-import Tag from "../../components/Tag"
+import Tag from "../../components/HomeComponents/Tag"
 
 
-const PhotographeList = (tagFilter, setTagFilter ) => (
+const HomePage = (tagFilter, setTagFilter ) => (
     <div className="page__grid-style">
         {data.photographers.map(photographer => (
                 <div className="page__grid-position">
@@ -32,4 +32,4 @@ const PhotographeList = (tagFilter, setTagFilter ) => (
     </div>
     
 )
-export default PhotographeList;
+export default HomePage;

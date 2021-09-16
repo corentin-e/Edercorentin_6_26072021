@@ -7,18 +7,20 @@ import Carousel from 'react-carousel';
 
 const CarouselAlbum = ({photosSorted, closeModal}) => {
 
-    const [setPhotoView] = useState({value: 0})
+    const setPhotoView = useState({value: 0})
     
-    const changePhotoView = (value) => {
-        setPhotoView({ value });
+    const changePhotoView = (event) => {
+        setPhotoView({value: event.target ? event.target.value : event});
     }
+
+    console.log(setPhotoView);
 
     return (
         <div className="carousel__text-test">
             <input
                 type="number"
                 value={setPhotoView}
-                onChange={(event) => changePhotoView(parseInt(event.target.value || 0))}
+                onChange={changePhotoView}
             />
             <Carousel
                 value={setPhotoView}

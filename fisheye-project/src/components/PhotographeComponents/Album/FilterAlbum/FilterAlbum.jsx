@@ -1,9 +1,9 @@
 import 'react-dropdown/style.css';
-import "./filterPhotos.css"
+import "./filterAlbum.css"
 import React from 'react';
 import Dropdown from "react-dropdown";
 
-const FilterPhotos = ({activeFilter, setActiveFilter}) => {
+const FilterAlbum = ({activeFilter, setActiveFilter}) => {
     const options = [
         {value:'popularité', label:'Popularité', className:"options__style",},
         {value:'date', label:'Date', className:"options__style",},
@@ -34,4 +34,4 @@ const FilterPhotos = ({activeFilter, setActiveFilter}) => {
     )
     
 }
-export default FilterPhotos;
+export default FilterAlbum;
