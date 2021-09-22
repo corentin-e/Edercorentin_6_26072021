@@ -1,7 +1,7 @@
 import "./tag.css"
 
-const Tag = ({content}) => (
-    <div className="header__tags-style">
+const Tag = ({content, onClick, isActive}) => (
+    <div className={`${isActive ? "header__tags-style-active" : "header__tags-style" }`}  onClick={(e) => onClick(content)}>
         #{content}
     </div>
 )

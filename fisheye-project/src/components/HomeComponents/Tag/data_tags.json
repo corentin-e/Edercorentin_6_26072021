@@ -1,42 +1,42 @@
 {
     "tags" : [
         {
-            "name": "Portrait",
+            "name": "portrait",
             "value": "portrait",
             "id": 10534564651235
         },
         {
-            "name": "Art",
+            "name": "art",
             "value": "art",
             "id": 20
         },
         {
-            "name": "Fashion",
+            "name": "fashion",
             "value": "fashion",
             "id": 30
         },
         {
-            "name": "Architecture",
+            "name": "architecture",
             "value": "architecture",
             "id": 40
         },
         {
-            "name": "Travel",
+            "name": "travel",
             "value": "travel",
             "id": 50
         },
         {
-            "name": "Sport",
+            "name": "sport",
             "value": "sport",
             "id": 60
         },
         {
-            "name": "Animals",
+            "name": "animals",
             "value": "animals",
             "id": 70
         },
         {
-            "name": "Events",
+            "name": "events",
             "value": "events",
             "id": 80
         } 

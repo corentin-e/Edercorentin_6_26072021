@@ -33,7 +33,7 @@ const PhotographePage = () => {
         <div className ="page__content-position">
             <BandCard photographer={photographer}/>
             <FilterAlbum activeFilter={activeFilter} setActiveFilter={setActiveFilter}/>
-            <PhotosAlbum photosSorted={photosSorted}/>
+            <PhotosAlbum photosSorted={photosSorted} photos={photos}/>
             <CotationBand price={photographer.price} likes={photographer.likes}/>
         </div>
         

@@ -18,11 +18,17 @@ code {
   margin: 10px;
 }
 
+.button-return-top-page__position {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+}
+
 .button-return-top-page__style {
   position: fixed;
   font-family:'Helvetica',
     sans-serif;
-  left: 45%;
   background-color:salmon;
   color: black;
   border: none;

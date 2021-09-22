@@ -10,6 +10,18 @@
     cursor: pointer;
 }
 
+.header__tags-style-active {
+    margin-right: 5px;
+    font-size: 15px;
+    background-color: brown;
+    color: white;
+    border-radius: 30px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 700px) {
     .header__tags-style {
         margin-right: 5px;

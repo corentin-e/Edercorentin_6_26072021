@@ -1,22 +1,29 @@
-.page__grid-style {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-auto-rows: 600px;
+
+.page__table-position{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 50px;
 }
 
-.page__grid-position {
-    display: flex;
-    justify-content: space-around;
-}
-
-.page__columns {
-    display: grid;
-    grid-gap: 10px;
-    margin-bottom: 20px;
-}
-
 .page__columns-style {
+    margin-top: 50px;
+    margin-right: 70px;
+    margin-left: 70px;
+}
+
+.page__columns-style-display {
+    display: none;
+}
+
+.page__columns-position {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.page__columns-items-position{
     display: flex;
     justify-content: center;
     flex-direction: column;

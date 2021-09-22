@@ -6,20 +6,7 @@ import React from 'react';
 import { useMediaQuery } from 'react-responsive'
 
 const ButtonContact = ({photographer, photosSorted}) => {
-    /* const isMobilScreen = useMediaQuery ({query: '(max-width: 700px)'})
-    const isTabletScreen = useMediaQuery ({query: '(max-width: 1200px)'}) */
     const [modalIsOpen, setIsOpen] = React.useState(false);
-    /* const isDestopScreen = {
-      content: {
-        top: '50%',
-        left: '50%',
-        right: 'auto',
-        bottom: 'auto',
-        transform: 'translate(-50%, -50%)',
-        padding: 0,
-        width: '35%',
-      },
-    }; */
   
     function openModal() {
       setIsOpen(true);

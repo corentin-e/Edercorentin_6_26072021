@@ -29,3 +29,47 @@
     ) 
     
     {data.photographers.filter(user => user.id == id).map(photographer => (*/
+
+
+
+
+
+
+        
+
+/* const setPhotoView = useState({value: 0})
+    
+    const changePhotoView = (event) => {
+        setPhotoView({value: event.target ? event.target.value : event});
+    }
+
+    console.log(setPhotoView); */
+
+
+{/* <div className="carousel__text-test">
+            <input
+                type="number"
+                value={setPhotoView}
+                onChange={changePhotoView}
+            />
+            <Carousel
+                value={setPhotoView}
+                onChange={changePhotoView}
+                slides={photosSorted.map(media => (
+                    <div>
+                        <div className="carousel__image-cadre-album-style">
+                            {("video" in media)
+                                ? <video   autoplay controls className="page__image-album-style" type="jpg" src={`${process.env.PUBLIC_URL}/asset/photos/Album/${media.video}`} />
+                                : <img className="page__image-album-style" type="jpg" src={`${process.env.PUBLIC_URL}/asset/photos/Album/${media.image}`} />
+                            }
+                        </div>
+                        <div className="page__image-details-title-style">{media.title}</div>
+                    </div>
+                ))
+                }
+                plugins={[
+                    'arrows',
+                    'clickToChange'
+                ]}
+            />
+            </div> */}

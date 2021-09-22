@@ -64,11 +64,13 @@ function App() {
                         />
                     </Route>
                 </Switch>
-                {buttonToTop && (
-                    <button class="button-return-top-page__style" onClick={scrollToTop}>
-                        Passer au contenu
-                    </button>
-                )}
+                <div className="button-return-top-page__position">
+                    {buttonToTop && (
+                        <button className="button-return-top-page__style" onClick={scrollToTop}>
+                            Passer au contenu
+                        </button>
+                    )}
+                </div>
             </Router>
         </div>
     );
