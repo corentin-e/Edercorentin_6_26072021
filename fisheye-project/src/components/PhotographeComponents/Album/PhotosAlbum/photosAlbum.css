@@ -80,8 +80,8 @@
 
 .close_carousel {
     position: fixed;
-    right: 15px;
-    top: 0px;
+    right: 20%;
+    top: 20%;
     width: 60px;
     height: 60px;
     opacity: 1;
