@@ -6,3 +6,4 @@ const Tag = ({content, onClick, isActive}) => (
     </div>
 )
 export default Tag;
+
