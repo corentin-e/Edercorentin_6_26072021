@@ -75,13 +75,24 @@
 }
 
 .ReactModal__Overlay {
+    display: flex;
+    justify-content: center;
     background-color: white!important;
+    width: 100%;
 }
 
-.close_carousel {
-    position: fixed;
-    right: 25%;
-    top: 10%;
+.modal_responsive-carousel {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 70%!important;
+    height: 100%;
+}
+
+.close_modal-carousel {
+    position: absolute;
+    right: 22%!important;
+    top: 300px!important;
     width: 60px;
     height: 60px;
     opacity: 1;
@@ -94,6 +105,11 @@
     .page__album-grid-style {
         grid-template-columns: auto auto;
     }
+
+    .close_modal-carousel {
+        right: 15%!important;
+        top: 300px!important;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -103,6 +119,21 @@
 
     .page__image-cadre-album-style {
         height: 355px;
+    }
+
+    .close_modal-carousel {
+        right: 5%!important;
+        top: 35%!important;
+        width: 35px;
+        height: 35px;
+    }
+
+    .modal_responsive-carousel {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 90%!important;
+        height: 100%;
     }
 }
 

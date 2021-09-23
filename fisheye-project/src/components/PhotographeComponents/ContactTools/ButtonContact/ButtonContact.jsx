@@ -17,7 +17,7 @@ const ButtonContact = ({photographer, photosSorted}) => {
     }
     
     return (
-        <div className="page__button-responsive">
+        <div className="page__button-postion">
           <button className="page__button-contact-style" onClick={openModal}>Contactez-moi</button>
           <Modal
           isOpen={modalIsOpen}

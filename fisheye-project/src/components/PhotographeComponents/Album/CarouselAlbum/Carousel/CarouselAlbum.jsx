@@ -22,7 +22,7 @@ const CarouselAlbum = ({photos}) => {
     console.log(photos);
 
     return (     
-        <Carousel showThumbs={false}>
+        <Carousel showThumbs={false} showStatus={false} showIndicators={false}>
             {photos.map(media => (
                 <div>
                     <div key={media.id} className="page__image-cadre-carousel-style">

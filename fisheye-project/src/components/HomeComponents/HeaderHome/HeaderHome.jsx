@@ -18,7 +18,7 @@ const HeaderHome = ({tagFilter, toggleFilter}) => {
         <div className="header__tags-display">
             <div className="header__tags-position-items">
                 {data.tags.map(tag => (
-                    <Tag key={tag.id} content={tag.name} onClick={toggleFilter} isActive={isActive()}/>
+                    <Tag key={tag.id} content={tag.name} onClick={toggleFilter} isActive={isActive(tag.name)}/>
                 ))
                 }
             </div>
