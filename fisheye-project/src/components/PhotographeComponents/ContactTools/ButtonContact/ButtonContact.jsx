@@ -3,7 +3,6 @@ import "./buttonContact.css"
 import FormContact from "../FormPhotographerContact/FormContact.jsx"
 import Modal from 'react-modal';
 import React from 'react';
-import { useMediaQuery } from 'react-responsive'
 
 const ButtonContact = ({photographer, photosSorted}) => {
     const [modalIsOpen, setIsOpen] = React.useState(false);

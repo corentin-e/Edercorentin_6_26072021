@@ -2,7 +2,21 @@ import "./formContact.css"
 import React from "react";
 
 const FormContact = ({photographer, closeModal}) => {
-    return (
+
+    var first_name = {first_name};
+    var last_name = {last_name};
+    var email = {email};
+    var message = {message};
+
+    const formCompleted = ([first_name, last_name, email, message]) => {
+        console.log("Prénom:" + first_name);
+        console.log("Nom:" + last_name);
+        console.log("Email:" + email);
+        console.log("Votre message:" + message);
+        return false;
+    }
+
+    render : return (
         <div className="form__content-style">
             <div className="form__header-position-items">
                 <div className="form__header-title">
@@ -12,38 +26,44 @@ const FormContact = ({photographer, closeModal}) => {
                 <div className="form__content-position-items">
                     <form>
                         <p className="form__content-text-style">Prénom</p>
-                        <input 
+                        <input
+                            name="first_name"
                             className="form__content-input-style" 
                             type="text"
-                            minlength="2"
-                            required  
+                            value={first_name} 
                         />
                         <p className="form__content-text-style">Nom</p>
-                        <input 
+                        <input
+                            name="last_name" 
                             className="form__content-input-style" 
-                            type="text"  
+                            type="text" 
+                            value={last_name}
                         />
                         <p className="form__content-text-style">Email</p>
-                        <input 
+                        <input
+                            name="email"  
                             className="form__content-input-style" 
                             type="email"
+                            value={email}
                         />
                         <p className="form__content-text-style">Votre message</p>
                         <textarea
+                            name="message"  
                             className="form__content-input-message-style" 
                             type="textarea"
+                            value={message}
                         />
                         <input
                             id="submit"
                             className="form__btn-submit"
                             type="submit"
-                            value="Envoyer"
-                            onClick={closeModal}
+                            onClick={formCompleted}   
                         />
                     </form>
                 </div>
             </div>
         </div>
-   )  
-}
+   ) 
+   
+} 
 export default FormContact;

@@ -12,18 +12,16 @@ function App() {
     const [tagFilter, setTagFilter] = useState([]);
     const [buttonToTop, setButtonToTop] = useState(false);
 
-    const isBrowser = typeof window !== `undefined`
+    const handleScroll = () => {
+        setButtonToTop(true);
+        window.removeEventListener("scroll", handleScroll);
+    };
 
     useEffect(() => {
         if (buttonToTop === false) {
             window.addEventListener("scroll", handleScroll);
         }
     }, [buttonToTop]);
-    
-    const handleScroll = () => {
-        setButtonToTop(true);
-        window.removeEventListener("scroll", handleScroll);
-    };
 
     const scrollToTop = () => {
         window.scrollTo({ top: 0 });

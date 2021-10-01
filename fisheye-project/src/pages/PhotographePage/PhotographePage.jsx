@@ -1,4 +1,4 @@
-import React, {useState, text} from "react";
+import React, {useState} from "react";
 import './photographePage.css'
 import { BandCard } from "../../components/PhotographeComponents/ProfilPhotographer/BandCard";
 import { FilterAlbum } from "../../components/PhotographeComponents/Album/FilterAlbum";
@@ -6,17 +6,23 @@ import { PhotosAlbum } from "../../components/PhotographeComponents/Album/Photos
 import { CotationBand } from "../../components/PhotographeComponents/ProfilPhotographer/CotationBand";
 import {useParams} from "react-router-dom";
 import data from '../../data'
-import { ButtonContact } from "../../components/PhotographeComponents/ContactTools/ButtonContact";
 
 
 /* import { BrowserRouter as  Link } from 'react-router-dom'; */
 /* import React from "react"; */
 
 const PhotographePage = () => {
-    const [activeFilter, setActiveFilter] = useState('Popularité')
     let { id } = useParams();
+    const [activeFilter, setActiveFilter] = useState('Popularité')
     const photographer = data.photographers.find(user => user.id == id)
     const photos = data.media.filter(photo => photo.photographerId == id)
+    const [likes, setLikes] = useState(photos.reduce((acc, photo) => {
+        acc += photo.likes
+        return acc
+    }, 0))
+    const incrementGlobalLike = () => {
+        setLikes(likes + 1)
+    }
 
     const photosSorted = photos.sort((a, b) => {
         if(activeFilter === 'Popularité') {
@@ -26,16 +32,15 @@ const PhotographePage = () => {
         } else if(activeFilter === 'Titre') {
             return a.title.localeCompare(b.title)
         }
+        return photosSorted
     })
-
-    console.log(activeFilter)
 
     return (
         <div className ="page__content-position">
             <BandCard photographer={photographer}/>
             <FilterAlbum activeFilter={activeFilter} setActiveFilter={setActiveFilter}/>
-            <PhotosAlbum photosSorted={photosSorted} photos={photos}/>
-            <CotationBand price={photographer.price} likes={photographer.likes}/>
+            <PhotosAlbum incrementGlobalLike={incrementGlobalLike} photosSorted={photosSorted} photos={photos}/>
+            <CotationBand price={photographer.price} likes={likes}/>
         </div>
         
     )

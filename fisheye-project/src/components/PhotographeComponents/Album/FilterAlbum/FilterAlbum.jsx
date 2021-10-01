@@ -10,7 +10,6 @@ const FilterAlbum = ({activeFilter, setActiveFilter}) => {
         {value:'titre', label:'Titre', className:"options__style",}
     ];
     const defaultOption = options.label;
-    console.log(defaultOption)
 
     const changeFilter = (options) => {
         setActiveFilter(options.label);
@@ -28,6 +27,7 @@ const FilterAlbum = ({activeFilter, setActiveFilter}) => {
                     controlClassName='myControlClassName'
                     arrowClassName='myArrowClassName'
                     menuClassName='myMenuClassName'
+                    
                 />
             </div>
         </div>

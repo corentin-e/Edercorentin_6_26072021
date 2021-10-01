@@ -10,11 +10,9 @@ const HeaderHome = ({tagFilter, toggleFilter}) => {
     const isActive = (tag) => { 
         return tagFilter.find( el => el === tag)
     }
-
-    console.log(isActive);
     return (
     <div className="header__position-items">
-        <Link to="/"><img className="header__logo-style" src={logo} alt="logo"/></Link>
+        <Link  to="/"><img className="header__logo-style" src={logo} alt="logo"/></Link>
         <div className="header__tags-display">
             <div className="header__tags-position-items">
                 {data.tags.map(tag => (

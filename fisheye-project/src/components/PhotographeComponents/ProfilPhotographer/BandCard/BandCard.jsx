@@ -12,7 +12,7 @@ const BandCard = ({photographer}) => (
                     <div className="page__details-block-style">
                         <div className="page__photographer-block">
                             <div className="page__details-name-style">{photographer.name}</div>
-                            <ButtonContact photographer={photographer}/>
+                            <ButtonContact  photographer={photographer}/>
                         </div>
                        
                         <div className="page__details-location-style">{photographer.city}, {photographer.country}</div>
