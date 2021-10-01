@@ -21,7 +21,7 @@ const HomePage = ({ tagFilter, setTagFilter }) => {
                     <div>
                         {(isInTagFilter(photographer.tags) || tagFilter.length === 0)
                             ?   
-                                <div className="page__columns-style">
+                                <div key="homechild" className="page__columns-style">
                                     <div className="page__columns-position">
                                         <div className="page__columns-items-position">
                                             <Link to={`/photographer/${photographer.id}`}><div className="page__portrait-style"><img className="page__portrait-dimensions"  src={`${process.env.PUBLIC_URL}/asset/photos/Photographers/${photographer.portrait}`} alt="portrait-photographe" /></div></Link>
@@ -39,7 +39,7 @@ const HomePage = ({ tagFilter, setTagFilter }) => {
                                     </div>
                                 </div>
                                 
-                            :   <div className="page__columns-style-display">
+                            :   <div key="home_child" className="page__columns-style-display">
                                 </div>
 
                         }

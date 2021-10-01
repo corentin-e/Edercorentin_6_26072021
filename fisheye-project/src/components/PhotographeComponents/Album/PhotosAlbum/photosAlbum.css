@@ -92,7 +92,7 @@
 .close_modal-carousel {
     position: absolute;
     right: 22%!important;
-    top: 300px!important;
+    top: 160px!important;
     width: 60px;
     height: 60px;
     opacity: 1;
@@ -108,7 +108,7 @@
 
     .close_modal-carousel {
         right: 15%!important;
-        top: 300px!important;
+        top: 160px!important;
     }
 }
 
