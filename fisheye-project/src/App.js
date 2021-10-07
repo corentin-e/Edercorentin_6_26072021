@@ -9,7 +9,9 @@ import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 
 function App() {
+
     const [tagFilter, setTagFilter] = useState([]);
+
     const [buttonToTop, setButtonToTop] = useState(false);
 
     const handleScroll = useCallback(() => {
@@ -28,9 +30,7 @@ function App() {
         setButtonToTop(false);
     };
 
-
     const toggleFilter = filter => {
-        console.log("value", filter)
         const isActive = tagFilter.find(value => value === filter)
 
         if (isActive) {
