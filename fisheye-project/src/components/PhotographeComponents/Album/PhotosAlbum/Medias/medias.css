@@ -61,12 +61,30 @@
     align-items: center;
     color: brown;
     font-size: 20px;
+    cursor: pointer;
+}
+
+@keyframes icon-likes {
+    from {
+        width: 15px;
+    }
+    to {
+        width: 30px;
+        fill: orange;
+    }
 }
 
 .page__details-likes-icon-style {
     font-size: 20px;
     margin-left: 5px;
 }
+
+.page__details-likes-icon-style:hover{
+    animation-name: icon-likes;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
 
 .test {
     background-color: aqua;

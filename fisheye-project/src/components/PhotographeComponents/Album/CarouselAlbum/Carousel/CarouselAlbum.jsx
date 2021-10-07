@@ -6,9 +6,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
 const CarouselAlbum = ({photos}) => {
-
+    
     return (     
-        <Carousel showThumbs={false} showStatus={false} showIndicators={false}>
+        <Carousel  autoFocus={false} showThumbs={false} showStatus={false} showIndicators={false}>
             {photos.map(media => (
                 <div>
                     <div key={media.id} className="page__image-cadre-carousel-style">

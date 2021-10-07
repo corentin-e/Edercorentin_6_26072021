@@ -3,10 +3,12 @@ import React from "react";
 
 const FormContact = ({photographer, closeModal}) => {
 
-    var first_name = {first_name};
-    var last_name = {last_name};
-    var email = {email};
-    var message = {message};
+    let first_name = {first_name};
+    let last_name = {last_name};
+    let email = {email};
+    let message = {message};
+
+    const [modalIsOpen, setIsOpen] = React.useState(false);
 
     const formCompleted = ([first_name, last_name, email, message]) => {
         console.log("Prénom:" + first_name);
@@ -16,7 +18,7 @@ const FormContact = ({photographer, closeModal}) => {
         return false;
     }
 
-    render : return (
+    return (
         <div className="form__content-style">
             <div className="form__header-position-items">
                 <div className="form__header-title">
