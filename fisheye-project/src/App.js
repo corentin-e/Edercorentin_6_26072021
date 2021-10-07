@@ -3,7 +3,7 @@ import { HeaderHome } from "./components/HomeComponents/HeaderHome";
 import { HeaderPhotographe } from './components/PhotographeComponents/HeaderPhotographe';
 import { HomePage } from "./pages/HomePage";
 import PhotographePage from "./pages/PhotographePage";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 
@@ -12,16 +12,16 @@ function App() {
     const [tagFilter, setTagFilter] = useState([]);
     const [buttonToTop, setButtonToTop] = useState(false);
 
-    const handleScroll = () => {
+    const handleScroll = useCallback(() => {
         setButtonToTop(true);
         window.removeEventListener("scroll", handleScroll);
-    };
+    }, [])
 
     useEffect(() => {
         if (buttonToTop === false) {
             window.addEventListener("scroll", handleScroll);
         }
-    }, [buttonToTop]);
+    }, [buttonToTop, handleScroll]);
 
     const scrollToTop = () => {
         window.scrollTo({ top: 0 });

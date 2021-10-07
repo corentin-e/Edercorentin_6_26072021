@@ -14,8 +14,8 @@ import data from '../../data'
 const PhotographePage = () => {
     let { id } = useParams();
     const [activeFilter, setActiveFilter] = useState('Popularité')
-    const photographer = data.photographers.find(user => user.id == id)
-    const photos = data.media.filter(photo => photo.photographerId == id)
+    const photographer = data.photographers.find(user => user.id === id)
+    const photos = data.media.filter(photo => photo.photographerId === id)
     const [likes, setLikes] = useState(photos.reduce((acc, photo) => {
         acc += photo.likes
         return acc

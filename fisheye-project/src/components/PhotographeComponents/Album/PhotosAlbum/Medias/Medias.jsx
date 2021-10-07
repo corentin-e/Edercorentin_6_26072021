@@ -13,7 +13,7 @@ const Medias = ({media, incrementGlobalLike, openModal}) => {
     }
 
     return (
-        <div className="page__album-grid-position" >
+        <div key ={media.title} className="page__album-grid-position" >
             <div className="page__album-grid">
                 <div className="page__album-block-image-items-position">
                     <div className="page__image-cadre-album-style" onClick={openModal}>

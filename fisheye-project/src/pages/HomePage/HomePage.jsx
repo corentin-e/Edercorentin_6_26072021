@@ -16,7 +16,7 @@ const HomePage = ({ tagFilter, setTagFilter }) => {
         
         <div className="page__table-position">
             {data.photographers.map(photographer => (
-                <div>
+                <div key={photographer.id}>
                     {(isInTagFilter(photographer.tags) || tagFilter.length === 0)
                         ?   
                             <div key="homechild" className="page__columns-style">
