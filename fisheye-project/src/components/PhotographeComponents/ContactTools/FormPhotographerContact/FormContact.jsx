@@ -3,19 +3,45 @@ import React from "react";
 
 const FormContact = ({photographer, closeModal}) => {
 
-    let first_name = {first_name};
+/*     let first_name = {first_name};
     let last_name = {last_name};
     let email = {email};
-    let message = {message};
+    let message = {message}; */
 
-    const [modalIsOpen, setIsOpen] = React.useState(false);
-
-    const formCompleted = ([first_name, last_name, email, message]) => {
+  /*   const formCompleted = ([first_name, last_name, email, message]) => {
         console.log("Prénom:" + first_name);
         console.log("Nom:" + last_name);
         console.log("Email:" + email);
         console.log("Votre message:" + message);
         return false;
+    } */
+
+    const [valueFirstName, setFirstName] = React.useState('');
+    const [valueLastName, setLastName] = React.useState('');
+    const [valueEmail, setEmail] = React.useState('');
+    const [valueMessage, setMessage] = React.useState('');
+
+    const handleFirstName = (e) => {
+        setFirstName(e.target.value)
+    }
+
+    const handleLastName = (e) => {
+        setLastName(e.target.value)
+    }
+
+    const handleEmail = (e) => {
+        setEmail(e.target.value)
+    }
+
+    const handleMessage = (e) => {
+        setMessage(e.target.value)
+    }
+
+    const handleForm = () => {
+        console.log("Prénom: " + valueFirstName);
+        console.log("Nom: " + valueLastName);
+        console.log("Email: " + valueEmail);
+        console.log("Votre message: " + valueMessage);
     }
 
     return (
@@ -32,34 +58,38 @@ const FormContact = ({photographer, closeModal}) => {
                             name="first_name"
                             className="form__content-input-style" 
                             type="text"
-                            value={first_name} 
+                            value={valueFirstName}
+                            onChange={handleFirstName} 
                         />
                         <p className="form__content-text-style">Nom</p>
                         <input
                             name="last_name" 
                             className="form__content-input-style" 
                             type="text" 
-                            value={last_name}
+                            value={valueLastName}
+                            onChange={handleLastName} 
                         />
                         <p className="form__content-text-style">Email</p>
                         <input
                             name="email"  
                             className="form__content-input-style" 
                             type="email"
-                            value={email}
+                            value={valueEmail}
+                            onChange={handleEmail} 
                         />
                         <p className="form__content-text-style">Votre message</p>
                         <textarea
                             name="message"  
                             className="form__content-input-message-style" 
                             type="textarea"
-                            value={message}
+                            value={valueMessage}
+                            onChange={handleMessage} 
                         />
                         <input
-                            id="submit"
                             className="form__btn-submit"
-                            type="submit"
-                            onClick={formCompleted}   
+                            type="button"
+                            value= "Envoyer"
+                            onClick={handleForm}   
                         />
                     </form>
                 </div>
