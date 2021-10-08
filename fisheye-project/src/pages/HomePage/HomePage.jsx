@@ -22,7 +22,7 @@ const HomePage = ({ tagFilter, setTagFilter }) => {
                             <div key="homechild" className="page__columns-style">
                                 <div className="page__columns-position">
                                     <div className="page__columns-items-position">
-                                        <Link to={`/photographer/${photographer.id}`}><div className="page__portrait-style"><img className="page__portrait-dimensions"  src={`${process.env.PUBLIC_URL}/asset/photos/Photographers/${photographer.portrait}`} alt="portrait-photographe" /></div></Link>
+                                        <Link to={`/photographer/${photographer.id}`}><div className="page__portrait-style"><img className="page__portrait-dimensions"  src={`${process.env.PUBLIC_URL}/asset/photos/Photographers/${photographer.portrait}`} alt={photographer.alt} /></div></Link>
                                         <Link className="page__name-link-style" to={`/photographer/${photographer.id}`}><div className="page__name-style">{photographer.name}</div></Link>
                                         <div className="page__city-style">{photographer.city}, {photographer.country}</div>
                                         <div className="page__citation-style">{photographer.tagline}</div>

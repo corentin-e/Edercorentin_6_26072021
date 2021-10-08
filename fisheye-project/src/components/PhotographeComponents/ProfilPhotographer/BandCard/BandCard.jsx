@@ -25,7 +25,7 @@ const BandCard = ({photographer}) => (
                         </div>
                     </div>
                 </div>
-                <div className="page__details-portrait-style"><img className="page__portrait-dimensions"  src={`${process.env.PUBLIC_URL}/asset/photos/Photographers/${photographer.portrait}`} alt="portrait-photographe" /></div>
+                <div className="page__details-portrait-style"><img className="page__portrait-dimensions"  src={`${process.env.PUBLIC_URL}/asset/photos/Photographers/${photographer.portrait}`} alt={photographer.alt} /></div>
             </div>
         </div>
     </div>
