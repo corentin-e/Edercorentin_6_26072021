@@ -2,7 +2,7 @@
 import "./photosAlbum.css"
 import Modal from 'react-modal';
 import React, {useState} from 'react';
-import { CarouselAlbum } from "../CarouselAlbum/Carousel";
+import { CarouselAlbum } from "../CarouselAlbum";
 import Medias from "./Medias/Medias";
 
 Modal.setAppElement('#root');

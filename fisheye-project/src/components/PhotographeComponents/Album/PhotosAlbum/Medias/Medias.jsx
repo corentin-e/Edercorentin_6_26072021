@@ -15,16 +15,22 @@ const Medias = ({media, incrementGlobalLike, openModal}) => {
     return (
         <div key ={media.title} className="page__album-grid-position" >
             <div className="page__album-grid">
-                <div className="page__album-block-image-items-position">
-                    <div className="page__image-cadre-album-style" onClick={openModal}>
+                <div className="page__album-block-media-items-position">
+                    <div className="page__media-cadre-album-style" onClick={openModal}>
                         {("video" in media)
-                            ? <video autoPlay controls className="page__image-album-style" type="jpg" src={`${process.env.PUBLIC_URL}/asset/photos/Album/${media.video}`} alt={media.alt} />
-                            : <img className="page__image-album-style" type="jpg" src={`${process.env.PUBLIC_URL}/asset/photos/Album/${media.image}`} alt={media.alt} />
+                            ?   <video className="page__video-album-style" type="jpg" src={`${process.env.PUBLIC_URL}/asset/photos/Album/${media.video}`} alt={media.alt} />
+                            :   <img className="page__media-album-style" type="jpg" src={`${process.env.PUBLIC_URL}/asset/photos/Album/${media.image}`} alt={media.alt} />
+                        }
+                        {("video" in media)
+                            ?    <div className="page__position-play-icon-style">
+                                    <FeatherIcon key="icon" className="page__details-play-icon-style" icon="play" fill="white" width="30px" />
+                                </div>
+                            :   <div className="page__position-play-icon-style"></div>
                         }
                     </div>
-                    <div className="page__image-details-album-position">
-                        <div className="page__image-details-title-style" onClick={openModal}>{media.title}</div>
-                        <div className="page__image-details-likes-style" onClick={incrementLike} >{likes}<FeatherIcon key="icon" className="page__details-likes-icon-style" icon="heart" fill="brown" width="15px" /></div>
+                    <div className="page__media-details-album-position">
+                        <div className="page__media-details-title-style" onClick={openModal}>{media.title}</div>
+                        <button className="page__media-details-likes-style" onClick={incrementLike} >{likes}<FeatherIcon key="icon" className="page__details-likes-icon-style" icon="heart" fill="brown" width="15px" /></button>
                     </div>
                 </div>
             </div>

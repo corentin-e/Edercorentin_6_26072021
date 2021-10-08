@@ -1,6 +1,7 @@
 .header__tags-style {
     margin-right: 5px;
     font-size: 15px;
+    background-color: transparent;
     color: brown;
     border: 1px solid lightgray;
     border-radius: 30px;
