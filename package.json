@@ -2,7 +2,7 @@
   "name": "fisheye-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://etharion29.github.io/Edercorentin_6_26072021/fisheye-project",
+  "homepage": "https://etharion29.github.io/Edercorentin_6_26072021",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@testing-library/jest-dom": "^5.14.1",
