@@ -11,7 +11,11 @@
     padding-right: 20px;
 }
 
-.myControlClassName {
+.css-tj5bde-Svg {
+    color: white;
+}
+
+/* .myControlClassName {
     background-color: brown;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -28,8 +32,21 @@
     background-color: brown;
     width: 150px;
     color: white;
+} */
+
+/* .css-2b097c-container {
+    width: 200px;
 }
 
-.options__style {
+.css-yk16xz-control {
+    background-color: brown!important;
+    color: white!important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 150px;
+    border-radius: 5px;
+} */
+
+/* .options__style {
     color: white;
-}
+} */
