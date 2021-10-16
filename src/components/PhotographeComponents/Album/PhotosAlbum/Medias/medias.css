@@ -56,6 +56,8 @@
     color: brown;
     font-size: 20px;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
 
 .page__media-details-title-style:hover {
@@ -89,8 +91,8 @@
 
 .page__position-play-icon-style {
     position: absolute;
-    margin-top: 15%;
-    margin-right: 18%;
+    margin-top: 277px;
+    margin-right: 337px;
 }
 
 .page__details-play-icon-style {

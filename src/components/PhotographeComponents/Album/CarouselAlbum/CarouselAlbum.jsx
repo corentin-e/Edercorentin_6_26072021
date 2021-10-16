@@ -3,20 +3,17 @@ import "./carouselAlbum.css"
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import SourceOfMedias from "../SourceOfMedias/SourceOfMedias.jsx";
 
 
-const CarouselAlbum = ({photos, carrouselIndex}) => {
+const CarouselAlbum = ({photos, carrouselIndex, isModalOpen}) => {
 
     return (
-        <Carousel selectedItem={carrouselIndex} autoFocus={false} showThumbs={false} showStatus={false} showIndicators={false}>
+        <Carousel class="carousel_style" ariaLabel selectedItem={carrouselIndex} autoFocus={false} showThumbs={false} showStatus={false} showIndicators={false}>
             {photos.map(media => (
                 <div key={media.id}>
                     <div key={media.id} className="page__image-cadre-carousel-style">
-                        {("video" in media)
-                            ? <video autoPlay controls className="page__image-carousel-style" type="jpg" src={`${process.env.PUBLIC_URL}/asset/photos/Album/${media.video}`} alt={media.alt} />
-                            : <img className="page__image-carousel-style" type="jpg" src={`${process.env.PUBLIC_URL}/asset/photos/Album/${media.image}`} alt={media.alt} />
-                        }
-
+                        <SourceOfMedias isModalOpen={isModalOpen} media={media}/>
                     </div>
                     <div className="page__image-carousel-details-title-style">{media.title}</div>
                 </div>

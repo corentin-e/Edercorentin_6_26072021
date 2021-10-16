@@ -1,0 +1,28 @@
+import "./sourceOfMedias.css"
+import React from "react";
+
+
+
+const SourceOfMedias = ({media, isModalOpen}) => {
+
+    if (isModalOpen) {
+        return (
+            <div className="page__under-cadre-style">
+                {("video" in media)
+                    ? <video autoPlay controls className="page__media-style" type="jpg" src={`${process.env.PUBLIC_URL}/asset/photos/Album/${media.video}`} alt={media.alt} />
+                    : <img className="page__media-style" type="jpg" src={`${process.env.PUBLIC_URL}/asset/photos/Album/${media.image}`} alt={media.alt} />
+                }
+            </div>
+        )
+    } else {
+        return (
+            <div className="page__under-cadre-style">
+                {("video" in media)
+                    ? <video className="page__media-style" type="jpg" src={`${process.env.PUBLIC_URL}/asset/photos/Album/${media.video}`} alt={media.alt} />
+                    : <img className="page__media-style" type="jpg" src={`${process.env.PUBLIC_URL}/asset/photos/Album/${media.image}`} alt={media.alt} />
+                }
+            </div>
+        )
+    }
+}
+export default SourceOfMedias;

@@ -15,12 +15,6 @@
     height: 100%;
 }
 
-.page__image-carousel-style {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
 .page__image-carousel-details-title-style {
     position: absolute;
     color: brown;
@@ -47,6 +41,10 @@
     display: flex;
     align-items: center;
     height: 100%!important;
+}
+
+.carousel_style {
+    outline: none;
 }
 
 .carousel-root {

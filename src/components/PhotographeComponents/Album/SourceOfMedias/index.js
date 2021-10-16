@@ -1,0 +1,1 @@
+export { default as SourceOfMedias } from './SourceOfMedias'

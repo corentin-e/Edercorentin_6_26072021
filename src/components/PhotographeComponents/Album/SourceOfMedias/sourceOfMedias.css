@@ -1,0 +1,12 @@
+.page__under-cadre-style {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.page__media-style {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+

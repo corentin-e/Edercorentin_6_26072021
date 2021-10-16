@@ -18,8 +18,8 @@ const FilterAlbum = ({activeFilter, setActiveFilter}) => {
 
     return (
         <div className="page__items-filter-position">
-            <p className="page__filter-text">Trier par</p>
-            <div className="page__filter-dropdown-style">
+            <label className="page__filter-text">Trier par</label>
+            <div role="button" className="page__filter-dropdown-style">
                 <Dropdown
                     onChange = {changeFilter}
                     options={options}
@@ -27,7 +27,6 @@ const FilterAlbum = ({activeFilter, setActiveFilter}) => {
                     controlClassName='myControlClassName'
                     arrowClassName='myArrowClassName'
                     menuClassName='myMenuClassName'
-                    
                 />
             </div>
         </div>
