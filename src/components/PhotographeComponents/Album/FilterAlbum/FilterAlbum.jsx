@@ -6,16 +6,25 @@ import Select from "react-select";
 
 const FilterAlbum = ({setActiveFilter}) => {
 
+     /* Options of dropdown filter */
+
     const options = [
         {value:'popularité', label:'Popularité', className:"options__style",},
         {value:'date', label:'Date', className:"options__style",},
         {value:'titre', label:'Titre', className:"options__style",}
     ];
+
+    /* Options by default */
+
     const defaultOption = options.label;
+
+    /* Function for get label option selected */
 
     const changeFilter = (options) => {
         setActiveFilter(options.label);
     };
+
+    /* Style of filter */
 
     const customStyles = {
         control: (styles) => ({...styles, backgroundColor: 'brown', width: 200, textColor: 'white' }),

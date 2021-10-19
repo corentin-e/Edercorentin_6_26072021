@@ -3,19 +3,6 @@ import React from "react";
 
 const FormContact = ({photographer, closeModal}) => {
 
-/*     let first_name = {first_name};
-    let last_name = {last_name};
-    let email = {email};
-    let message = {message}; */
-
-  /*   const formCompleted = ([first_name, last_name, email, message]) => {
-        console.log("Prénom:" + first_name);
-        console.log("Nom:" + last_name);
-        console.log("Email:" + email);
-        console.log("Votre message:" + message);
-        return false;
-    } */
-
     const [valueFirstName, setFirstName] = React.useState('');
     const [valueLastName, setLastName] = React.useState('');
     const [valueEmail, setEmail] = React.useState('');
@@ -38,7 +25,6 @@ const FormContact = ({photographer, closeModal}) => {
     }
 
     const handleForm = () => {
-        console.log("Prénom: " + valueFirstName);
         console.log("Nom: " + valueLastName);
         console.log("Email: " + valueEmail);
         console.log("Votre message: " + valueMessage);
@@ -53,14 +39,6 @@ const FormContact = ({photographer, closeModal}) => {
                 </div>
                 <div className="form__content-position-items">
                     <form>
-                        <p className="form__content-text-style">Prénom</p>
-                        <input
-                            name="first_name"
-                            className="form__content-input-style" 
-                            type="text"
-                            value={valueFirstName}
-                            onChange={handleFirstName} 
-                        />
                         <p className="form__content-text-style">Nom</p>
                         <input
                             name="last_name" 
