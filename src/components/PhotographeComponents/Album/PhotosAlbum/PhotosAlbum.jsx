@@ -9,9 +9,14 @@ import { span } from "prelude-ls";
 Modal.setAppElement('#root');
 
 const PhotosAlbum = ({photosSorted, photos, incrementGlobalLike}) => {
+
+    /* Constante use to have statut of modal opening */
     const [modalIsOpen, setIsOpen] = React.useState(false);
+
+    /* Get the statut of carousel */
     const [carrouselIndex, setCarrouselIndex] = useState(0)
 
+    /* States of Modal oppening with Carousel */
     const openModal = (i) => () => {
         setCarrouselIndex(i)
         setIsOpen(true);
@@ -21,6 +26,7 @@ const PhotosAlbum = ({photosSorted, photos, incrementGlobalLike}) => {
         setIsOpen(false);
     }
 
+    /* Function for open Modal with Carousel */
     function isModalOpen() {
         let isActiveModal = false;
         if (setCarrouselIndex(i) && setIsOpen == true) {

@@ -5,29 +5,32 @@ import Modal from 'react-modal';
 import React from 'react';
 
 const ButtonContact = ({photographer, photosSorted}) => {
-    const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  /* Constante use to have statut of modal opening */
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  /* States of Modal oppening form */
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
   
-    function openModal() {
-      setIsOpen(true);
-    }
-  
-    function closeModal() {
-      setIsOpen(false);
-    }
-    
-    return (
-        <div className="page__button-postion">
-          <button className="page__button-contact-style" onClick={openModal}>Contactez-moi</button>
-          <Modal
-          isOpen={modalIsOpen}
-          onRequestClose={closeModal}
-          contentLabel="Contact me"
-          className="modal_responsive"
-          >
-            <FormContact photographer={photographer} closeModal={closeModal}/>
-          </Modal>
-        </div>
-    )
+  return (
+      <div className="page__button-postion">
+        <button className="page__button-contact-style" onClick={openModal}>Contactez-moi</button>
+        <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Contact me"
+        className="modal_responsive"
+        >
+          <FormContact photographer={photographer} closeModal={closeModal}/>
+        </Modal>
+      </div>
+  )
     
 }
 export default ButtonContact;

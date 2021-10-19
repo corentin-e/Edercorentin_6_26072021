@@ -7,7 +7,11 @@ import SourceOfMedias from "../../SourceOfMedias/SourceOfMedias";
 
 
 const Medias = ({media, incrementGlobalLike, openModal}) => {
+
+    /* Constante use for increment value of like and get state of likes*/
     const  [likes, setLike] = useState(media.likes)
+
+    /* Function for increment value of like on state of likes */
     const incrementLike = () => {
         setLike(likes + 1)
         incrementGlobalLike()

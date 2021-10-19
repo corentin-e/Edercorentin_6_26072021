@@ -7,6 +7,7 @@ import Tag from "../../components/HomeComponents/Tag"
 
 const HomePage = ({ tagFilter, setTagFilter }) => {
   
+    /* Function for filter photograph */
     const isInTagFilter = (photographerTags) => {
         const found = tagFilter.some(r => photographerTags.includes(r))
         return found

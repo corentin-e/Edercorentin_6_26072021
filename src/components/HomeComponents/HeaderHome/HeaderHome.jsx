@@ -7,13 +7,11 @@ import React from "react";
 
 const HeaderHome = ({tagFilter, toggleFilter}) => {
 
-    /* START - Get valu of tag, active in filter tag */
+    /* Get valu of tag, active in filter tag */
 
     const isActive = (tag) => { 
         return tagFilter.find( el => el === tag)
     }
-
-    /* END - Get valu of tag, active in filter tag */
 
     return (
     <div className="header__position-items">

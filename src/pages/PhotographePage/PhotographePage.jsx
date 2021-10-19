@@ -12,18 +12,30 @@ import data from '../../data'
 /* import React from "react"; */
 
 const PhotographePage = () => {
+
     let { id } = useParams();
+
+    /* Constante to use state and value selected in filter */ 
     const [activeFilter, setActiveFilter] = useState('Popularité')
+
+    /* Constante to use state and value selected in filter */ 
     const photographer = data.photographers.find(user => user.id === id)
+
+    /* Constante for simplify code foreach value in data in media part */ 
     const photos = data.media.filter(photo => photo.photographerId === id)
+
+    /* Constante for get value by increment like */ 
     const [likes, setLikes] = useState(photos.reduce((acc, photo) => {
         acc += photo.likes
         return acc
     }, 0))
+
+    /* Constante for get filter type by value */ 
     const incrementGlobalLike = () => {
         setLikes(likes + 1)
     }
 
+    /* Constante for get filter type by value */ 
     const photosSorted = photos.sort((a, b) => {
         if(activeFilter === 'Popularité') {
             return b.likes - a.likes

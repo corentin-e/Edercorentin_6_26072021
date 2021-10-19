@@ -3,15 +3,12 @@ import React from "react";
 
 const FormContact = ({photographer, closeModal}) => {
 
-    const [valueFirstName, setFirstName] = React.useState('');
+    /* Constante to get value in input */
     const [valueLastName, setLastName] = React.useState('');
     const [valueEmail, setEmail] = React.useState('');
     const [valueMessage, setMessage] = React.useState('');
 
-    const handleFirstName = (e) => {
-        setFirstName(e.target.value)
-    }
-
+    /* Function to get value in input */
     const handleLastName = (e) => {
         setLastName(e.target.value)
     }
@@ -24,6 +21,7 @@ const FormContact = ({photographer, closeModal}) => {
         setMessage(e.target.value)
     }
 
+    /* Function to affiche content of input in consol log */
     const handleForm = () => {
         console.log("Nom: " + valueLastName);
         console.log("Email: " + valueEmail);

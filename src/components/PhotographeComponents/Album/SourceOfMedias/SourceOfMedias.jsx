@@ -5,6 +5,8 @@ import React from "react";
 
 const SourceOfMedias = ({media, isModalOpen}) => {
 
+    /* If Carousel Modal is open so video media is active else video media is a image  */
+
     if (isModalOpen) {
         return (
             <div className="page__under-cadre-style">
