@@ -14,7 +14,7 @@ const PhotographePage = () => {
     /* Constante to use state and value selected in filter */ 
     const [activeFilter, setActiveFilter] = useState('Popularité')
 
-    /* Constante to use state and value selected in filter */ 
+    /* Constante to use for find photographer element */ 
     const photographer = data.photographers.find(user => user.id === id)
 
     /* Constante for simplify code foreach value in data in media part */ 
