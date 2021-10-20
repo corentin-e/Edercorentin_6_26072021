@@ -3,7 +3,7 @@ import "./carouselAlbum.css"
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-/* import SourceOfMedias from "../SourceOfMedias/SourceOfMedias.jsx"; */
+import SourceOfMedias from "../SourceOfMedias/SourceOfMedias.jsx";
 
 
 const CarouselAlbum = ({photos, carrouselIndex, isModalOpen}) => {
