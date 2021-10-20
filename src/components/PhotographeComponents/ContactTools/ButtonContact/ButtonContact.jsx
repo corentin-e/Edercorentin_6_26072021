@@ -6,7 +6,7 @@ import React from 'react';
 
 const ButtonContact = ({photographer, photosSorted}) => {
 
-  /* Constante use to have statut of modal opening */
+  /* Constant use to have statut of modal opening */
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   /* States of Modal oppening form */

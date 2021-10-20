@@ -7,10 +7,6 @@ import { CotationBand } from "../../components/PhotographeComponents/ProfilPhoto
 import {useParams} from "react-router-dom";
 import data from '../../data'
 
-
-/* import { BrowserRouter as  Link } from 'react-router-dom'; */
-/* import React from "react"; */
-
 const PhotographePage = () => {
 
     let { id } = useParams();

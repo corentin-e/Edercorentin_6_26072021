@@ -7,8 +7,7 @@ import React from "react";
 
 const HeaderHome = ({tagFilter, toggleFilter}) => {
 
-    /* Get valu of tag, active in filter tag */
-
+    /* Get valu of tag active in filter tag */
     const isActive = (tag) => { 
         return tagFilter.find( el => el === tag)
     }

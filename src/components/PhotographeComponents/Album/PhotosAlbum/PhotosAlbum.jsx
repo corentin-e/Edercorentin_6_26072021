@@ -22,6 +22,7 @@ const PhotosAlbum = ({photosSorted, photos, incrementGlobalLike}) => {
         setIsOpen(true);
     }
 
+    /* Function for close Modal with Carousel */
     function closeModal() {
         setIsOpen(false);
     }
