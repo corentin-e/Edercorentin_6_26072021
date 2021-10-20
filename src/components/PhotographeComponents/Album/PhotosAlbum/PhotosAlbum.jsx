@@ -26,7 +26,7 @@ const PhotosAlbum = ({photosSorted, photos, incrementGlobalLike}) => {
         setIsOpen(false);
     }
 
-    /* Function for open Modal with Carousel */
+    /* Function for open Modal with Carousel and arrived on the image selected */
     function isModalOpen() {
         let isActiveModal = false;
         if (setCarrouselIndex(i) && setIsOpen == true) {
