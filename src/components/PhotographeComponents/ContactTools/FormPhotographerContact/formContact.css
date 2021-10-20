@@ -33,6 +33,8 @@
     opacity: 1;
     cursor: pointer;
     transform: scale(0.7);
+    background-color: transparent;
+    border: none;
 }
 
 .form__content-position-items {

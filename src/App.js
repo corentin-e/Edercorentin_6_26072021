@@ -64,7 +64,7 @@ function App() {
                 </Switch>
                 <div className="button-return-top-page__position">
                     {buttonToTop && (
-                        <button className="button-return-top-page__style" onClick={scrollToTop}>
+                        <button aria-label="Retour haut de page" className="button-return-top-page__style" onClick={scrollToTop}>
                             Passer au contenu
                         </button>
                     )}
