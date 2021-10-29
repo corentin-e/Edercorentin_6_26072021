@@ -11,7 +11,7 @@ const SourceOfMedias = ({media, isModalOpen}) => {
         return (
             <div className="page__under-cadre-style">
                 {("video" in media)
-                    ? <video controls className="page__media-style" type="jpg" src={`${process.env.PUBLIC_URL}/asset/photos/Album/${media.video}`} alt={media.alt} />
+                    ? <video autoPlay className="page__media-style" type="jpg" src={`${process.env.PUBLIC_URL}/asset/photos/Album/${media.video}`} alt={media.alt} />
                     : <img className="page__media-style" type="jpg" src={`${process.env.PUBLIC_URL}/asset/photos/Album/${media.image}`} alt={media.alt} />
                 }
             </div>
