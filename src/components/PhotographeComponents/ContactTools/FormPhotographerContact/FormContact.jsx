@@ -43,7 +43,8 @@ const FormContact = ({photographer, closeModal}) => {
                             className="form__content-input-style" 
                             type="text" 
                             value={valueLastName}
-                            onChange={handleLastName} 
+                            onChange={handleLastName}
+                            label="Votre nom" 
                         />
                         <p className="form__content-text-style">Email</p>
                         <input
@@ -51,7 +52,8 @@ const FormContact = ({photographer, closeModal}) => {
                             className="form__content-input-style" 
                             type="email"
                             value={valueEmail}
-                            onChange={handleEmail} 
+                            onChange={handleEmail}
+                            label="Votre email"  
                         />
                         <p className="form__content-text-style">Votre message</p>
                         <textarea
@@ -65,7 +67,8 @@ const FormContact = ({photographer, closeModal}) => {
                             className="form__btn-submit"
                             type="button"
                             value= "Envoyer"
-                            onClick={handleForm}   
+                            onClick={handleForm} 
+                            label="Votre message"   
                         />
                     </form>
                 </div>
