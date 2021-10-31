@@ -33,8 +33,8 @@ const FilterAlbum = ({setActiveFilter}) => {
     
 
     return (
-        <div className="page__items-filter-position">
-            <label className="page__filter-text">Trier par</label>
+        <div className="page__items-filter-position" role="option">
+            <label className="page__filter-text" label="Trier par">Trier par</label>
             <Select
                 onChange={changeFilter}
                 options={options}
