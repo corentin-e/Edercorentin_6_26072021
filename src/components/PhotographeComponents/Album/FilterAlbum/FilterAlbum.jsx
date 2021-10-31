@@ -8,9 +8,9 @@ const FilterAlbum = ({setActiveFilter}) => {
 
      /* Options of dropdown filter */
     const options = [
-        {value:'popularité', label:"Popularité", role:"option_popularité",},
-        {value:'date', label:"Date", role:"option_date",},
-        {value:'titre', label:"Titre", role:"option_titre",}
+        {value:'popularité', label:"Popularité", role:"option popularité",},
+        {value:'date', label:"Date", role:"option date",},
+        {value:'titre', label:"Titre", role:"option titre",}
     ];
 
     /* Options by default */
