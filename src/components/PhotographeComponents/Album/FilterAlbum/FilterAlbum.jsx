@@ -40,7 +40,7 @@ const FilterAlbum = ({setActiveFilter}) => {
                 options={options}
                 value={defaultOption}
                 styles={customStyles}
-                label={defaultOption}
+                label={options.value}
             />
         </div>
     )
