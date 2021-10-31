@@ -36,10 +36,11 @@ const FilterAlbum = ({setActiveFilter}) => {
         <div className="page__items-filter-position">
             <label className="page__filter-text">Trier par</label>
             <Select
-                onChange = {changeFilter}
+                onChange={changeFilter}
                 options={options}
                 value={defaultOption}
                 styles={customStyles}
+                label={defaultOption}
             />
         </div>
     )
